@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Факт</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<!-- Bootstrap Core CSS -->
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<style>
+	h1.header {
+	color:#E8DFC8;
+	}
+	.descr {
+	color: white
+	}
+	
+	p {font-size: 13pt}
+	
+	ul {list-style: none}
+	
+	li {margin-bottom: 10px}
+	
+	</style>
+	
+	</head>
+	<body>
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+			<div class="container"> 
+				
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="/">Главная страница</a> </li> 
+						<li> <a href="/fact">Случайный факт</a> </li>
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+		<header style="background-color:#086375; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br/><br/>
+						<h1 class="header">Слово дня</h1>
+						<hr>
+						<br/>
+	                </div>
+					<div class="col-md-4">
+        	           
+					</div>
+	            </div>
+			</div>
+		</header>
+
+		<section id="portfolio">
+			<div class="container" >
+				<div class="col-md-12" >
+				<br/><br/>
+				<p>{{ fact_name }}</p>
+				<p>{{ fact_description }}</p>
+				<ul>		
+						{% for ex in fact_example %}
+							<p>{{ ex }}</p>
+						{% endfor %}
+				</ul>
+				<br/><br/>
+				<form action="/fact" method="GET"  target="_blank">
+				<input type="submit" value="Новый факт">	
+				</form>		
+				<br/><br/>
+			</div>
+		</section>
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">Проект выполнен в рамках мастерской 2019. <a href = "https://github.com/dashapopova/Slovo-dnja">Подробное описание</a></p> 
+			</div>
+		</footer>	
+		
+	</body>
+</html>
