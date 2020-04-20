@@ -55,4 +55,4 @@
 
 #### Ссылка на материалы
 
-Файл на github, где лежит частично отредактированная база данных, дополненная нашими фактами: https://github.com/dashapopova/Slovo-dnja/blob/master/Entries.md 
+Файл на github, где лежит частично отредактированная база данных, дополненная нашими фактами (наши факты, начиная с 341): https://github.com/dashapopova/Slovo-dnja/blob/master/Entries.md 
