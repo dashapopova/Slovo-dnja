@@ -104,7 +104,7 @@ def error(update, context):
 def main():
 	""" Run bot """
 
-	updater = Updater(token='', use_context=True)
+	updater = Updater(token='YOUR_TOKEN_HERE', use_context=True)
 	dispatcher = updater.dispatcher
 
 
